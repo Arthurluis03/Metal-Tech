@@ -77,7 +77,7 @@ form {
 }
 
 .btn-cadastrar,
-.btn-consultar {
+.btn-limpar {
   padding: 10px;
   border-radius: 8px;
   font-size: 0.9rem;
@@ -103,17 +103,17 @@ form {
   box-shadow: 0 2px 8px rgba(240, 165, 0, 0.2);
 }
 
-.btn-consultar {
+.btn-limpar {
   background-color: transparent;
   color: #f0a500;
   border: 2px solid #f0a500;
 }
-.btn-consultar:hover {
+.btn-limpar:hover {
   background-color: rgba(240, 165, 0, 0.1);
   transform: translateY(-2px);
 }
 
-.btn-consultar:active {
+.btn-limpar:active {
   transform: translateY(0);
 }
 
