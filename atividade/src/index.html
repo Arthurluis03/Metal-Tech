@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>METALTECH</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="image/logo.png" alt="logo" />
+      </div>
+    </header>
+    <main>
+      <form action="#">
+        <div class="box-form">
+          <div class="form-campo">
+            <label for="nome">Nome: <span>*</span></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Informe a ferramenta"
+            />
+          </div>
+
+          <div class="form-campo">
+            <label for="nome">Tipo: <span>*</span></label>
+            <select id="tipo">
+              <option value="#">Selecione o tipo</option>
+              <option value="corte">Corte</option>
+              <option value="medicao">Medição</option>
+              <option value="aperto">Aperto</option>
+              <option value="soldagem">Soldagem</option>
+            </select>
+          </div>
+
+          <div class="form-campo">
+            <label for="nome">Quantidade: <span>*</span></label>
+            <input
+              type="number"
+              name="quantidade"
+              id="quantidade"
+              placeholder="Informe a quantidade"
+            />
+          </div>
+
+          <div class="form-campo">
+            <label for="nome">Setor: <span>*</span></label>
+            <select id="setor">
+              <option value="#">Selecione o setor</option>
+              <option value="usinagem">Usinagem</option>
+              <option value="montagem">Montagem</option>
+              <option value="solda">Solda</option>
+              <option value="manutencao">Manutenção</option>
+            </select>
+          </div>
+
+          <div class="form-campo">
+            <label for="nome">Código: <span>*</span></label>
+            <input
+              type="text"
+              name="codigo"
+              id="codigo"
+              placeholder="Informe o codigo"
+            />
+          </div>
+
+          <div class="form-campo">
+            <label for="nome">Fabricante: <span>*</span></label>
+            <input
+              type="text"
+              name="frabicante"
+              id="frabicante"
+              placeholder="Informe o fabricante"
+            />
+          </div>
+        </div>
+        <div class="form-botao">
+          <button class="btn-cadastrar">CADASTRAR</button>
+          <button class="btn-consultar">CONSULTAR</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 MetalTech Industrial - Todos os direitos resevados</p>
+    </footer>
+  </body>
+</html>

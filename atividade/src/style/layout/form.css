@@ -1,0 +1,125 @@
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+}
+
+form {
+  background-color: #2a2a3e;
+  border-radius: 12px;
+  border-top: 4px solid #f0a500;
+  padding: 40px;
+  width: 100%;
+  max-width: 860px;
+}
+
+.box-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.form-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.form-campo label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #e8e8e8;
+}
+
+.form-campo label span {
+  color: #f0a500;
+}
+
+.form-campo input,
+.form-campo select {
+  width: 100%;
+  background-color: #1e1e32;
+  border: 1px solid #3a3a5c;
+  border-radius: 8px;
+  padding: 10px 16px;
+  color: #e8e8e8;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-campo input::placeholder {
+  color: #a0a0b0;
+}
+
+.form-campo input:focus,
+.form-campo select:focus {
+  border-color: #f0a500;
+}
+
+.form-campo select option {
+  background-color: #1e1e32;
+  color: #e8e8e8;
+}
+
+.form-botao {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  border-top: 1px solid #ffffff10;
+  padding-top: 28px;
+}
+
+.btn-cadastrar,
+.btn-consultar {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-cadastrar {
+  background-color: #f0a500;
+  color: #1a1a2e;
+  border: 2px solid #f0a500;
+}
+.btn-cadastrar:hover {
+  background-color: #c98a00;
+  border-color: #c98a00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(240, 165, 0, 0.3);
+}
+.btn-cadastrar:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(240, 165, 0, 0.2);
+}
+
+.btn-consultar {
+  background-color: transparent;
+  color: #f0a500;
+  border: 2px solid #f0a500;
+}
+.btn-consultar:hover {
+  background-color: rgba(240, 165, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.btn-consultar:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 657px) {
+  .box-form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
