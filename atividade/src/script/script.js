@@ -12,6 +12,12 @@ const btnLimpar = document.getElementById('.btn-limpar')
 const tabela = document.getElementById("clientesTable");
 const ferramenta = JSON.parse(localStorage.getItem("ferramenta")) || [];
 
+
+document.getElementById('btnLimpar').addEventListener('click', () => {
+  
+    localStorage.clear()
+
+});
 btnSumit.addEventListener("click", (e) => {
    e.preventDefault();
 
@@ -25,13 +31,13 @@ btnSumit.addEventListener("click", (e) => {
     return;
   }
 
-  if(inputCodigo.length < 5 && inputCodigo.length > 5){
+  if(inputCodigo.value.length < 5 || inputCodigo.value.length > 5){
     alert('Valor do código invalido!')
     return;
   }
-
-  else{
-    alert('Ferramenta Cadastrada com sucesso!')
+  if(!inputNome.value || !inputCodigo.value || !inputFornecedor.value || !inputQuantidade.value || !inputSetor.value || !inputTipo.value){
+    alert("Erro! Alguns campos não foram selecionados")
+    return;
   }
 
 
@@ -80,12 +86,3 @@ ferramenta.forEach((ferramenta) => {
 });
 
 /////////////////////////////////////////////
-document.getElementById('btnLimpar').addEventListener('click', () => {
-  
-  inputNome.value == "" 
-  inputTipo.value == "" 
-  inputQuantidade.value == "" 
-  inputCodigo.value == "" 
-  inputFornecedor.value == ""
-
-});
